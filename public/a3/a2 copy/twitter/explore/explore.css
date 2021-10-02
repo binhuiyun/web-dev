@@ -1,0 +1,159 @@
+a{
+    text-decoration: none;
+}
+body{
+    padding-left:10px;
+    background-color: black;
+}
+.wd-main{
+    /*padding-left:16px;*/
+    border-style:solid;
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+
+}
+.wd-magnifying-glass{
+    position:absolute;
+    left:40px;
+    top:30px;
+
+}
+.wd-search {
+    border-style: none;
+    border-radius: 25px;
+    background-color: darkgray;
+    color: white;
+    padding: 10px 10px 10px 30px;
+    width:1200px;
+}
+
+.wd-border-solid{
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+}
+.wd-border-rounded{
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left:76px;
+}
+.wd-border-bottom{
+    border-bottom: solid;
+    border-color: rgb(47,51,54);
+    border-width:1px;
+}
+
+.wd-border-below{
+    border-bottom:solid;
+    border-color: rgb(29,161,242);
+}
+.wd-white-color{
+    color:white;
+}
+.wd-handle-color{
+    color:lightgrey;
+}
+.wd-font-13{
+    font-size:13px;
+}
+.wd-padding-left{
+    padding-left:16px;
+}
+.wd-padding-left-12{
+    padding-left:12px;
+}
+.wd-padded-all-around-12{
+    padding:12px 12px 6px 12px;
+}
+.wd-padding-all-around{
+    padding:0 12px 12px 12px;
+}
+.wd-padding-12{
+    padding:12px;
+}
+.wd-pad-all-around{
+    padding: 6px 12px 0 12px;
+}
+.wd-padding-top-6{
+    padding-top: 6px;
+}
+.wd-padding-left-bottom{
+    padding-left:12px;
+    padding-bottom: 12px;
+}
+.wd-heart{
+    color:hotpink;
+}
+.wd-avatar{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+.wd-image{
+    width:504px;
+    height:264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+.wd-rounded-corners-bottom{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wd-font-15{
+    font-size:15px;
+}
+.wd-title-font{
+    font-size:20px;
+
+}
+.wd-highlight-color{
+    color:rgb(29,161,242);
+}
+.wd-link-color{
+    color:rgb(110,118,125);
+}
+.wd-flex-box-top{
+    display: flex;
+    flex-direction: row;
+}
+.wd-flex-box{
+    display:flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.wd-flex-box1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right:16px;
+}
+.wd-flex-box2{
+    display: flex;
+    flex-direction: row;
+    /*padding-left:76px;*/
+}
+.wd-flex-box3{
+    display: flex;
+    justify-content: space-between;
+    padding-left:76px;
+    padding-right:76px;
+}
+.wd-padding-bottom-16{
+    padding-bottom: 16px;
+}
+.wd-padding-top{
+    padding-top:12px;
+}
+.wd-bold{
+    font-weight:bold;
+}
+.wd-twitter-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
