@@ -5,11 +5,14 @@ body{
     padding-left:10px;
     background-color: black;
 }
+.wd-line{
+    line-height: 1.2;
+}
 .wd-main{
-    /*padding-left:16px;*/
     border-style:solid;
     border-color: rgb(47,51,54);
     border-width: 1px;
+    width:600px;
 
 }
 .wd-magnifying-glass{
@@ -69,7 +72,7 @@ body{
     padding-left:12px;
 }
 .wd-padded-all-around-12{
-    padding:12px 12px 6px 12px;
+    padding:12px 0px 0 12px;
 }
 .wd-padding-top-left{
     padding:12px 0 6px 0;
@@ -95,6 +98,10 @@ body{
 .wd-padding-left-bottom{
     padding-left:12px;
     padding-bottom: 12px;
+}
+.wd-padding-top-bottom{
+    padding:6px 0 12px 12px;
+
 }
 .wd-heart{
     color:hotpink;
