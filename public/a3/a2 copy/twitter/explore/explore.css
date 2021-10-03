@@ -39,6 +39,10 @@ body{
     border-radius: 20px;
     padding-left:76px;
 }
+.wd-flex-box2{
+    display: flex;
+    flex-direction: row;
+}
 .wd-border-bottom{
     border-bottom: solid;
     border-color: rgb(47,51,54);
@@ -67,11 +71,20 @@ body{
 .wd-padded-all-around-12{
     padding:12px 12px 6px 12px;
 }
+.wd-padding-top-left{
+    padding:12px 0 6px 0;
+}
+.wd-padding-6{
+    padding:6px 0 6px 0;
+}
 .wd-padding-all-around{
     padding:0 12px 12px 12px;
 }
 .wd-padding-12{
     padding:12px;
+}
+.wd-padding-16{
+    padding:16px;
 }
 .wd-pad-all-around{
     padding: 6px 12px 0 12px;
@@ -131,11 +144,7 @@ body{
     padding-left: 16px;
     padding-right:16px;
 }
-.wd-flex-box2{
-    display: flex;
-    flex-direction: row;
-    /*padding-left:76px;*/
-}
+
 .wd-flex-box3{
     display: flex;
     justify-content: space-between;
