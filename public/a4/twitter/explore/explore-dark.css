@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+}
+.btn-primary.override-bs {
+    border-radius: 20px;
+    font-size:15px;
+    background-color: rgb(29,161,242);
+    color:white;
+    border-style:none;
+}
+.btn-primary.follow{
+    border-radius: 20px;
+    background-color: white;
+    color:black;
+    border-style:none;
+}
+.wd-blue{
+    color:rgb(29,161,242);
+}
+.wd-font-13{
+    font-size:13px;
+}
+.override-color{
+    background-color: black;
+    color:white;
+}
+.wd-bg-gray{
+    background-color: #16181c;
+    color:white;
+}
+.nav-tabs.override-bs{
+    background-color: black;
+    border-style: none;
+}
+.nav-link.active.override-bs{
+    background-color: black;
+    color:white;
+    border-bottom:solid;
+    border-color: black black rgb(29,161,242);
+}
+.wd-border{
+    border-style: solid;
+    border-color: #16181c;
+    border-width:1px;
+}
+
+.wd-float{
+    float: left;
+    width: 10%;
+    padding-top:3px;
+    color:white;
+}
+.wd-more{
+    float: left;
+    padding-top:3px;
+
+}
+.wd-stack{
+    position: relative;
+    height:1em;
+    line-height: 1em;
+}
+.wd-nowrap{
+    white-space: nowrap;
+}
+.wd-text{
+    position: absolute;
+    z-index: 1;
+    bottom:10px;
+    left:10px;
+    color:white;
+    font-size:30px;
+}
+.wd-bg-lightgrey{
+    background-color: lightgrey;
+}
+.avatar{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+.wd-white-color{
+    color:white
+}
+.wd-bg-black{
+    color:black;
+}
+.rounded-corner{
+    border-radius: 20px;
+}
+.wd-magnifying-glass{
+    position:relative;
+    left:30px;
+    top:13px;
+}
+.wd-padding-left{
+    padding-left:40px;
+}
+.wd-bold{
+    font-weight: bold;
+}
+.wd-border-below{
+    border-bottom:solid;
+    border-color: rgb(29,161,242);
+}
+.wd-logo{
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+}
+.wd-light-color{
+    color:rgb(110,118,125);
+
+}
+.wd-flex-box{
+    display:flex;
+}
+.wd-no-padding{
+    padding:0;
+
+}
+.wd-padding-12{
+    padding-left:12px;
+    padding-right:12px;
+}
+.wd-flex-box-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+.wd-flex-box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 13px;
+}

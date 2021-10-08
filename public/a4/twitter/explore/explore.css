@@ -1,0 +1,74 @@
+.btn-primary.override-bs {
+    border-radius: 20px;
+    font-size:15px;
+}
+.avatar{
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+.wd-float{
+    float: left;
+    width: 10%;
+    padding-top:3px;
+}
+.wd-more{
+    float:left;
+    padding-top:3px;
+}
+
+.wd-stack{
+    position: relative;
+    height:1em;
+    line-height: 1em;
+}
+.wd-nowrap{
+    white-space: nowrap;
+}
+.wd-text{
+    position: absolute;
+    z-index: 1;
+    bottom:10px;
+    left:10px;
+    color:white;
+    font-size:30px;
+}
+
+.rounded-corner{
+    border-radius: 20px;
+}
+.wd-magnifying-glass{
+    position:relative;
+    left:30px;
+    top:13px;
+}
+.wd-padding-left{
+    padding-left:40px;
+}
+.wd-bold{
+    font-weight: bold;
+}
+.wd-padding-l2{
+    padding-left:2px;
+}
+.wd-logo{
+    width:90px;
+    height:90px;
+    border-radius: 10px;
+
+}
+.wd-light-color{
+    color:rgb(110,118,125);
+
+}
+.wd-flex-box{
+    display:flex;
+}
+.wd-no-padding{
+    padding:0;
+
+}
+.wd-padding-12{
+    padding-left:12px;
+    padding-right:12px;
+}
