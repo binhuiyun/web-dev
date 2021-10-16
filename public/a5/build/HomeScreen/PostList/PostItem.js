@@ -47,7 +47,6 @@ const PostItem = (post) => {
         </>
     </div>
     <hr>
-    
             `);
 }
 export default PostItem;
