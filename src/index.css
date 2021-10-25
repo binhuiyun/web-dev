@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cog-color{
+  color:rgb(29,161,242)
+}
+.avatar{
+  width:48px;
+  height:48px;
+  border-radius: 50%;
+}
+.btn-primary.override-bs {
+  border-radius: 20px;
+  font-size:15px;
+}
+
+.wd-more{
+  float:left;
+  padding-top:3px;
+}
+
+.wd-stack{
+  position: relative;
+  height:1em;
+  line-height: 1em;
+}
+.wd-nowrap{
+  white-space: nowrap;
+}
+.wd-text{
+  position: relative;
+  z-index: 1;
+  bottom:50px;
+  left:10px;
+  color:white;
+  margin-bottom: -40px;
+  font-size:36px;
+}
+
+.rounded-corner{
+  border-radius: 20px;
+}
+.wd-magnifying-glass{
+  position:relative;
+  left:30px;
+  top:13px;
+}
+.wd-padding-left{
+  padding:.375rem 2rem;
+}
+.wd-bold{
+  font-weight: bold;
+}
+.wd-padding-l2{
+  padding-left:2px;
+}
+.wd-logo{
+  width:90px;
+  height:90px;
+  border-radius: 10px;
+
+}
+.wd-light-color{
+  color:rgb(110,118,125);
+
+}
+.wd-flex-box{
+  display:flex;
+}
+.wd-no-padding{
+  padding:0;
+
+}
+.wd-padding-12{
+  padding-left:12px;
+  padding-right:12px;
+}
+
+.form-control.override-bs{
+  display: block;
+  width: 100%;
+  padding: .375rem 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0 solid #fff;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+

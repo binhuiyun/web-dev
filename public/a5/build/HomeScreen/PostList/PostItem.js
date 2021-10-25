@@ -8,9 +8,9 @@ const PostItem = (post) => {
             <div class="row-in-line ps-2 "><strong>${post.userName}</strong>
              <span i class="fas fa-check-circle "></i></span>
              <span class="wd-font-15 wd-link-color">${post.handle} <sup>.</sup> ${post.time}</span>
-                     <span class="float-end wd-link-color wd-title-font">...</span>     
-
+             <span class="float-end wd-link-color wd-title-font">...</span>     
             </div>
+            
             <div class="ps-2">${post.title}</div>
       
     ${post.linkTitle !== null && post.linkTitle !== '' ?
@@ -21,12 +21,12 @@ const PostItem = (post) => {
         <h6 class="card-title" >${post.linkTitle} </h6>   
       <div class="wd-link-color card-text">${post.linkContent} </div>
         <i class="fa fa-link wd-link-color"></i>
-        <span class="wd-font-13 wd-link-color">${post.linkURL}</span></div>` :
+        <span class="wd-font-13 wd-link-color">${post.linkURL}</span></div>` 
+        :
         `<div class="mt-2 card rounded-corner mb-2">
         <img src=${post.image} class="img-fluid card-img rounded-corner">`
-
         }
-      
+   
       </div>
 
     <div class="row mb-2">
@@ -42,9 +42,7 @@ const PostItem = (post) => {
     <div class="col-3">
     <a i class="fa fa-share wd-link-color wd-padding-12" href="share.html"></a>
     </div>
- 
     </div>
-        </>
     </div>
     <hr>
             `);
