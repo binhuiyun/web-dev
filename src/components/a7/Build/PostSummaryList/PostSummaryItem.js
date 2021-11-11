@@ -23,7 +23,7 @@ const PostSummaryItem = (
                 </div>
                 <div className="col-3">
                     <img src={post.image}
-                        className="wd-logo-home"/>
+                        className="wd-logo img-fluid"/>
                 </div>
             </div>
         </li>

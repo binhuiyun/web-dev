@@ -10,7 +10,7 @@
 .wd-font-25{
     font-size: 25px;
 }
-.form-control.override-bs{
+.form-control.override{
     background-color: black;
     color: white;
     padding:2px;

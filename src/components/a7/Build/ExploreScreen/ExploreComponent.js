@@ -5,11 +5,11 @@ const ExploreComponent = () => {
     return(
         <>
             <div className="row">
-             <div className="col-10 wd-flex-box">
-                    <i className="fas fa-search wd-magnifying-glass "/>
+                <div className="col-11 wd-search-area">
+                    <i className="fas fa-search wd-search-icon "/>
                     <input className="form-control override-bs rounded-pill " placeholder="Search Twitter"/>
                 </div>
-                <div className="col-2">
+                <div className="col-1">
                     <i className="fas fa-cog fa-2x cog-color" />
                 </div>
            </div>

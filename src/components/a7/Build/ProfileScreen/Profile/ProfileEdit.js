@@ -14,7 +14,7 @@ const ProfileEdit = (props) => {
     const handle = owner.handle;
     const dateJoined = owner.dateJoined;
     const followingCount = owner.followingCount;
-    const followerCount = owner.followerCount;
+    const followersCount = owner.followersCount;
 
 
 
@@ -44,7 +44,7 @@ const ProfileEdit = (props) => {
     const saveProfile = () => {
         const newProfile = {
             name, location, bio, website, dateOfBirth, bannerPicture, profilePicture, handle, dateJoined,
-            followingCount, followerCount
+            followingCount, followersCount
         }
 
         const action = {type: "update-profile", profile: newProfile}
@@ -75,7 +75,7 @@ const ProfileEdit = (props) => {
                     Name</li>
                 <li>
                 <input value={name} onChange={handleNameChange}
-                       className="form-control override-bs ms-2"/></li>
+                       className="form-control override ms-2"/></li>
         </ul>
 
             <ul className="list-unstyled wd-border mt-4">
@@ -95,13 +95,13 @@ const ProfileEdit = (props) => {
             Location</li>
         <li>
             <input value={location} onChange={handleLocationChange}
-                   className="form-control override-bs ms-2"/></li>
+                   className="form-control override ms-2"/></li>
         </ul>
             <ul className="list-unstyled wd-border mt-4">
                 <li className="ms-2 borderless  text-secondary">
                     Website</li>
                 <li>
-            <input className="form-control override-bs ms-2"
+            <input className="form-control override ms-2"
                    value ={website} onChange={handleWebsiteChange}/></li>
             </ul>
             <div className="text-secondary">Birth date</div>

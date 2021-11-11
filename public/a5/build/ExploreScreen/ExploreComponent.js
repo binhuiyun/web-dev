@@ -5,13 +5,13 @@ const ExploreComponent = () => {
     return(`
             <div class="row">
                        <!-- search field and cog -->
-             <div class="col-10 wd-flex-box">
+             <div class="col-11 wd-search-area">
          
-                    <i class="fas fa-search wd-magnifying-glass "></i>
+                    <i class="fas fa-search wd-search-icon "></i>
                     <input class=" form-control rounded-corner wd-padding-left" placeholder="Search Twitter">
 
                 </div>
-                <div class="col-2">
+                <div class="col-1">
                     <i class="fas fa-cog fa-2x" style="color:rgb(29,161,242)"></i>
                 </div>
            </div>

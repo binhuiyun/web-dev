@@ -38,10 +38,15 @@
 .rounded-corner{
     border-radius: 20px;
 }
-.wd-magnifying-glass{
+
+.wd-search-area{
     position:relative;
-    left:30px;
-    top:13px;
+}
+
+.wd-search-icon{
+    position: absolute;
+    left: 20px;
+    top: 10px;
 }
 .wd-padding-left{
     padding-left:40px;
