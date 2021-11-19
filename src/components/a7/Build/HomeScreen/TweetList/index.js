@@ -1,6 +1,5 @@
 import React from "react";
 import {useSelector} from "react-redux";
-
 import TweetListItem from "./TweetListItem";
 const selectAllTweets = (state) => state.tweets;
 

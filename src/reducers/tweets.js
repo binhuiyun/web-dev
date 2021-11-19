@@ -10,7 +10,7 @@ const tweets = (state = posts, action) => {
                 "verified": false,
                 "handle": "ReactJS",
                 "time": "2h",
-                "tweet":action.tweet,
+                ...action.tweet,
                 "avatar-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
                 "logo-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
                 "stats": {
@@ -19,12 +19,11 @@ const tweets = (state = posts, action) => {
                     "likes": 345
                 },
             };
-
-            return[
-                tweet,
-                ...state
-            ]
-
+            return ([
+                    tweet,
+                    ...state
+                ]
+            );
         case 'delete-tweet':
             return state
                     .filter(tweet => tweet._id !== action.tweet._id)
@@ -45,12 +44,8 @@ const tweets = (state = posts, action) => {
                     }
                 })
         case 'fetch-all-tweets':
-            return({
-                tweets: action.tweets
-            })
+            return action.tweets;
             break;
-
-
 
         default:
             return(state);

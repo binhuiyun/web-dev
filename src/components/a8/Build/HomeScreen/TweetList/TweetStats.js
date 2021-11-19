@@ -1,14 +1,18 @@
 import React from "react";
+import {likeTweet} from "../../../../../services/tweetService";
+
 import {useDispatch} from "react-redux";
 
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
     const likeClickHandler = () => {
-        dispatch({type: 'like-tweet', tweet});
+        likeTweet(dispatch, tweet);
+
     };
-    return (<div className="row mt-2">
+    return (
+        <div className="row mt-2">
         <div className="col">
-            <i className="far fa-comment me-2"></i>
+            <i className="far fa-comment me-2"/>
             {tweet.stats.comments}
         </div>
         <div className="col">
@@ -30,7 +34,8 @@ const TweetStats = ({tweet}) => {
         <div className="col">
             <i className="fas fa-external-link-alt me-2"></i>
         </div>
-    </div>)
+    </div>
+    )
 }
 
 export default TweetStats;
