@@ -1,10 +1,8 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-
 import TweetListItem from "./TweetListItem";
 import {fetchAllTweets} from "../../../../services/tweetService";
 const selectAllTweets = (state) => state.tweets;
-
 
 const TweetList = () => {
     const tweets = useSelector(selectAllTweets);

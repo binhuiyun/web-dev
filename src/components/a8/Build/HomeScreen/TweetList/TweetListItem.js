@@ -12,6 +12,7 @@ const TweetListItem = ({tweet}) => {
         deleteTweet(dispatch, tweet);
 
     }
+    console.log(tweet)
     return(
         <li className="list-group-item">
             <table>
@@ -45,6 +46,7 @@ const TweetListItem = ({tweet}) => {
                                     allowFullScreen></iframe>
                         }
                         {/*{JSON.stringify(tweet)}*/}
+
                         <TweetStats tweet={tweet}/>
 
                     </td>

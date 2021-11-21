@@ -23,12 +23,14 @@ const tweets = (state = posts, action) => {
                     tweet,
                     ...state
                 ]
+
             );
         case 'delete-tweet':
             return state
                     .filter(tweet => tweet._id !== action.tweet._id)
 
         case 'like-tweet':
+
             return state.map(tweet => {
                     if(tweet._id === action.tweet._id) {
                         if(tweet.liked === true) {

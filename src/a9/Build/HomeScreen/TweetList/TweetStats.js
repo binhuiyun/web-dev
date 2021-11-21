@@ -1,11 +1,14 @@
 import React from "react";
-import {likeTweet} from "../../../../services/tweetService";
+import {likeTweet} from "../../../services/tweetService";
 import {useDispatch} from "react-redux";
 
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
+    console.log(tweet)
     const likeClickHandler = () => {
+        console.log("stats:", tweet)
         likeTweet(dispatch, tweet);
+        console.log("stats after", tweet)
 
     };
     return (<div className="row mt-2">
@@ -19,6 +22,7 @@ const TweetStats = ({tweet}) => {
         </div>
         <div className="col" onClick={likeClickHandler}>
             {
+
                 tweet.liked &&
                 <i className="fas fa-heart me-2"
                    style={{color: tweet.liked ? 'red': "white"}}></i>
