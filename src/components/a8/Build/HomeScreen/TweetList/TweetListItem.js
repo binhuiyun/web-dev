@@ -10,9 +10,8 @@ const TweetListItem = ({tweet}) => {
     const dispatch = useDispatch();
     const deleteTweetClickHandler = () => {
         deleteTweet(dispatch, tweet);
-
     }
-    console.log(tweet)
+
     return(
         <li className="list-group-item">
             <table>

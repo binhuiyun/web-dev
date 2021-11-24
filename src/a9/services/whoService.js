@@ -1,4 +1,4 @@
-const WHO_API = 'http://localhost:4000/api/who';
+const WHO_API = 'http://localhost:4000/rest/who';
 
 export const fetchAllWho = (dispatch) =>
     fetch(WHO_API)
