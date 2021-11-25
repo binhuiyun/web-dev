@@ -29,7 +29,7 @@ function App() {
                 <Route path="/a8/twitter">
                     <Build/>
                 </Route>
-                {/*<Route path={["/", "/a9", "/a9/practice"]} exact={true}>*/}
+                {/*<Route path="/a9">*/}
                 {/*    <A9/>*/}
                 {/*</Route>*/}
 

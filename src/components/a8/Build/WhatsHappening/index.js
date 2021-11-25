@@ -8,9 +8,24 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
-        postNewTweet(dispatch, {
-            tweet: whatsHappening
-        });
+        const newTweet = {
+            _id: (new Date()).getTime() + '',
+            "topic": "Web Development",
+            "userName": "ReactJS",
+            "verified": false,
+            "handle": "ReactJS",
+            "time": "2h",
+            "tweet": whatsHappening,
+            "avatar-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+            "logo-image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+            "stats": {
+                "comments": 123,
+                "retweets": 234,
+                "likes": 345
+            },
+        };
+        postNewTweet(dispatch, newTweet)
+
     }
 
         return(
