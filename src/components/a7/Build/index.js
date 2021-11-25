@@ -4,10 +4,10 @@ import '../../../index.css'
 import ExploreScreen from "./ExploreScreen";
 import ProfileScreen from "./ProfileScreen";
 import HomeScreen from "./HomeScreen";
-import profile from "../../../reducers/profile";
-import who from "../../../reducers/who";
+import profile from "../reducers/profile";
+import who from "../reducers/who";
 import {Provider} from "react-redux";
-import tweets from "../../../reducers/tweets";
+import tweets from "../reducers/tweets";
 import {combineReducers, createStore} from "redux";
 
 const reducer = combineReducers({tweets: tweets, who, profile: profile})
