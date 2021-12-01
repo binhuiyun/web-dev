@@ -2,12 +2,13 @@ import './vendors/bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.min.css';
 import './App.css';
-import Practice from "./components/a8/Practice";
-import Build from "./components/a8/Build"
+import Practice from "./a9/Practice";
+import Build from "./a9/Build";
 import {BrowserRouter, Link, Route} from "react-router-dom";
-import A9 from "./a9";
 import A6 from "../src/components/a6";
 import A7 from "./components/a7";
+import A8 from "./components/a8";
+import React from "react";
 
 function App() {
     return (
@@ -23,15 +24,16 @@ function App() {
                 <Route path={["/a7", "/a7/practice"]} exact={true}>
                     <A7/>
                 </Route>
-                <Route path={["/", "/a8", "/a8/practice"]} exact={true}>
+                <Route path={["/a8", "/a8/practice"]} exact={true}>
+                    <A8/>
+                </Route>
+
+                <Route path="/a9/practice">
                     <Practice/>
                 </Route>
-                <Route path="/a8/twitter">
+                <Route path="/a9/twitter">
                     <Build/>
                 </Route>
-                {/*<Route path="/a9">*/}
-                {/*    <A9/>*/}
-                {/*</Route>*/}
 
             </div>
         </BrowserRouter>

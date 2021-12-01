@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import './profile.css'
-import {getCurrentProfile} from "../../../../services/ProfileService";
-import {fetchAllTweets} from "../../../../services/tweetService";
+import {getCurrentProfile} from "../../../services/ProfileService";
+
+
 const ProfileNonEdit =(props) => {
     const owner = useSelector((state)=> state.profile)
     const dispatch = useDispatch();

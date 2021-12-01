@@ -12,7 +12,7 @@ const A6 = () =>{
                 <Route path="/a6/hello" exact={true}>
                     <HelloWorld/>
                 </Route>
-                <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
+                <Route path={["/a6", "/a6/practice"]} exact={true}>
                     <Practice/>
                 </Route>
                 <Route path="/a6/twitter/home" component={HomeScreen}/>

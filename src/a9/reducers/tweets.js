@@ -1,4 +1,11 @@
-import posts from './data/tweets.json';
+// import posts from './data/tweets.json';
+const TWEET_API = 'http://localhost:4000/api/tweets';
+let posts = [];
+fetch(TWEET_API)
+    .then(response => response.json())
+    .then(tweets =>
+        posts = tweets
+    );
 
 const tweets = (state = posts, action) => {
     switch (action.type) {

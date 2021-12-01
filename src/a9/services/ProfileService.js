@@ -1,4 +1,4 @@
-const PROFILE_API = 'http://localhost:4000/api/profile';
+const PROFILE_API = 'http://localhost:4000/rest/profile/6197eff8b43a8376cbc951c6';
 
 export const getCurrentProfile = (dispatch) =>
     fetch(PROFILE_API)

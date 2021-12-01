@@ -1,11 +1,7 @@
 const WHO_API = 'http://localhost:4000/rest/who';
 
-export const fetchAllWho = (dispatch) =>
+const findAllWho = () =>
     fetch(WHO_API)
-        .then(response => response.json())
-        .then(who =>
-            dispatch({
-                type: 'fetch-all-who',
-                who
-            })
-        );
+        .then(response => response.json());
+
+export default findAllWho;

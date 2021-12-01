@@ -4,11 +4,15 @@ import {useDispatch} from "react-redux";
 
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
-    console.log(tweet)
     const likeClickHandler = () => {
-        console.log("stats:", tweet)
+        if(tweet.liked === true) {
+            tweet.stats.likes--;
+        } else {
+            tweet.stats.likes++;
+        }
+        tweet.liked = !tweet.liked;
         likeTweet(dispatch, tweet);
-        console.log("stats after", tweet)
+
 
     };
     return (<div className="row mt-2">

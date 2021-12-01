@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {updateCurrentProfile} from "../../../../services/ProfileService";
+import {updateCurrentProfile} from "../../../services/ProfileService";
 
 const ProfileEdit = (props) => {
     const owner = useSelector((state)=> state.profile)
@@ -23,8 +23,6 @@ const ProfileEdit = (props) => {
 
     const dispatch = useDispatch();
     const save = () => {
-        // dispatch({type: "update-profile",
-        //     profile: localProfile})
         updateCurrentProfile(dispatch,localProfile)
         props.setIsEdit(false);
     }

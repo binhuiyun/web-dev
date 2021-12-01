@@ -2,21 +2,15 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import './profile.css'
 import {getCurrentProfile} from "../../../../../services/ProfileService";
-import {fetchAllTweets} from "../../../../../services/tweetService";
+
 const ProfileNonEdit =(props) => {
     const owner = useSelector((state)=> state.profile)
     const dispatch = useDispatch();
     const EditingMode = () => {
-        // getCurrentProfile(dispatch);
-        // console.log(owner)
         props.setIsEdit(true)
     }
     useEffect(() => getCurrentProfile(dispatch), [])
-    // useEffect(() =>
-    //         fetch('http://localhost:4000/api/profile')
-    //             .then(response => response.json())
-    //             .then(movies => setMovies(movies))
-    //     , []);
+
     return (
         <>
             <div className="row">

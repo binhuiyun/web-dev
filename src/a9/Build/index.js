@@ -4,10 +4,10 @@ import '../../index.css'
 import ExploreScreen from "./ExploreScreen";
 import ProfileScreen from "./ProfileScreen";
 import HomeScreen from "./HomeScreen";
-import profile from "../../reducers/profile";
-import who from "../../reducers/who";
+import profile from "../reducers/profile";
+import who from "../reducers/who";
 import {Provider} from "react-redux";
-import tweets from "../../reducers/tweets";
+import tweets from "../reducers/tweets";
 import {combineReducers, createStore} from "redux";
 
 const reducer = combineReducers({tweets: tweets, who, profile: profile})
@@ -17,7 +17,7 @@ const Build = () => {
     return(
         <Provider store={store}>
         <div>
-            <Route path={["/a9/twitter/home"]}
+            <Route path="/a9/twitter/home"
                    exact={true} component={HomeScreen}/>
             <Route path="/a9/twitter/explore"
                    exact={true} component={ExploreScreen}/>

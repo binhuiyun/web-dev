@@ -18,7 +18,7 @@ const Movies = () => {
 
     useEffect(() =>
         service.findAllMovies()
-            .then(movies => setMovies(movies)));
+            .then(movies => setMovies(movies)),[]);
     const deleteMovie = (movie) =>
         service.deleteMovie(movie._id)
             .then(() => setMovies(
