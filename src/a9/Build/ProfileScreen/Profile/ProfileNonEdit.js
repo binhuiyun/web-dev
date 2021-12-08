@@ -1,16 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React from "react";
 import './profile.css'
-import {getCurrentProfile} from "../../../services/ProfileService";
-
 
 const ProfileNonEdit =(props) => {
-    const owner = useSelector((state)=> state.profile)
-    const dispatch = useDispatch();
     const EditingMode = () => {
         props.setIsEdit(true)
     }
-    useEffect(() => getCurrentProfile(dispatch), [])
+    const owner = props.profile;
 
     return (
         <>

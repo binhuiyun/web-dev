@@ -1,13 +1,6 @@
-// import posts from './data/tweets.json';
-const TWEET_API = 'http://localhost:4000/api/tweets';
-let posts = [];
-fetch(TWEET_API)
-    .then(response => response.json())
-    .then(tweets =>
-        posts = tweets
-    );
+import posts from './data/tweets.json';
 
-const tweets = (state = posts, action) => {
+const tweets = (state=posts, action) => {
     switch (action.type) {
         case 'create-tweet':
           state=[action.tweet,

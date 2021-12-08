@@ -1,29 +1,9 @@
-import React, {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React from "react";
 import {updateCurrentProfile} from "../../../services/ProfileService";
 
 const ProfileEdit = (props) => {
-    const owner = useSelector((state)=> state.profile)
-    const [localProfile, setLocalProfile] = useState(owner);
-    const handleNameChange = (event) =>{
-        setLocalProfile({...localProfile, name: event.target.value})
-    }
-    const handleBioChange = (event) =>{
-        setLocalProfile({...localProfile, bio: event.target.value})
-    }
-    const handleLocationChange = (event) =>{
-        setLocalProfile({...localProfile, location: event.target.value})
-    }
-    const handleWebsiteChange = (event) =>{
-        setLocalProfile({...localProfile, website: event.target.value})
-    }
-    const handleDobChange= (event) =>{
-        setLocalProfile({...localProfile, dateOfBirth: event.target.value})
-    }
-
-    const dispatch = useDispatch();
     const save = () => {
-        updateCurrentProfile(dispatch,localProfile)
+        updateCurrentProfile(props.dispatch,props.profile)
         props.setIsEdit(false);
     }
     const exitEditingMode = () => {
@@ -37,17 +17,18 @@ const ProfileEdit = (props) => {
             onClick={save}>Save</button>
             <div className="mt-3">
                 <img className="img-fluid"
-                     src={localProfile.bannerPicture}/>
+                     src={props.profile.bannerPicture}/>
                 <div>
                     <img className="wd-profile-img wd-avatar-image wd-border-radius-20px"
-                         src={localProfile.profilePicture}/>
+                         src={props.profile.profilePicture}/>
                 </div>
             </div>
             <ul className="list-unstyled wd-border ">
                 <li className="ms-2 borderless text-secondary">
                     Name</li>
                 <li>
-                <input value={localProfile.name} onChange={handleNameChange}
+                <input value={props.profile.name}
+                       onChange={(e) => props.setProfile({...props.profile, name: e.target.value})}
                        className="form-control override ms-2"/></li>
         </ul>
 
@@ -56,8 +37,10 @@ const ProfileEdit = (props) => {
                     Bio</li>
                 <li >
                     <form id = "textarea">
-                        <textarea className ="wd-textarea ms-2" onChange={handleBioChange}>
-                            {localProfile.bio}
+
+                        <textarea className ="wd-textarea ms-2" onChange={(e) => props.setProfile({
+                            ...props.profile, bio:e.target.value})}>
+                          {props.profile.bio}
                         </textarea>
                     </form></li>
 
@@ -67,7 +50,9 @@ const ProfileEdit = (props) => {
         <li className="ms-2 borderless  text-secondary">
             Location</li>
         <li>
-            <input value={localProfile.location} onChange={handleLocationChange}
+            <input value={props.profile.location} onChange={(e) => this.props.setProfile(
+                {...props.profile, location: e.target.value}
+            )}
                    className="form-control override ms-2"/></li>
         </ul>
             <ul className="list-unstyled wd-border mt-4">
@@ -75,10 +60,13 @@ const ProfileEdit = (props) => {
                     Website</li>
                 <li>
             <input className="form-control override ms-2"
-                   value ={localProfile.website} onChange={handleWebsiteChange}/></li>
+                   value ={props.profile.website} onChange={(e) =>this.props.setProfile(
+                {...props.profile, website: e.target.value}
+            )}/></li>
             </ul>
             <div className="text-secondary">Birth date</div>
-            <input type="date" className = "wd-dob mb-2" value={localProfile.dateOfBirth} onChange={handleDobChange}/>
+            <input type="date" className = "wd-dob mb-2" value={props.profile.dateOfBirth} onChange={(e) =>
+            this.props.setProfile({...props.profile, dateOfBirth:e.target.value})}/>
         </>
 )
 }
